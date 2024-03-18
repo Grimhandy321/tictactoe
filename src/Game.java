@@ -2,7 +2,7 @@ import java.util.Objects;
 
 public class Game {
     public String[][] gameGrid = new String[3][3];
-    public String tokenA ;
+    public String tokenA;
     public String tokenB;
 
     public Game(String tokenA, String tokenB) {
@@ -22,7 +22,7 @@ public class Game {
         return gameGrid[x][y];
     }
     public String checkWinState(){
-        for(int x = 0; x< gameGrid.length;x++ ){
+        for(int x = 0; x< gameGrid.length; x++ ) {
             if(!Objects.equals(gameGrid[x][0], "")){
                 if(Objects.equals(gameGrid[x][0], tokenA) && Objects.equals(gameGrid[x][1], tokenA) && Objects.equals(gameGrid[x][2], tokenA)){
                     return tokenA;
@@ -32,7 +32,7 @@ public class Game {
                 }
             }
         }
-        for(int y = 0; y< gameGrid.length;y++ ){
+        for(int y = 0; y< gameGrid.length; y++ ) {
             if(!Objects.equals(gameGrid[0][y], "")){
                 if(Objects.equals(gameGrid[0][y], tokenA) && Objects.equals(gameGrid[1][y], tokenA) && Objects.equals(gameGrid[2][y], tokenA)){
                     return tokenA;
