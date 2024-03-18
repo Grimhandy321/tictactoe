@@ -12,9 +12,8 @@ public class Main {
 
         game.DrawGame();
 
-        while (!Objects.equals(game.checkWinState(), "")) {
-
-            game.checkWinState();
+        while (!Objects.equals(game.checkWinState(), " ")) {
+            
             game.AddToken(sc.nextInt(), sc.nextInt(), "");
             game.getToken(sc.nextInt(), sc.nextInt());
         }

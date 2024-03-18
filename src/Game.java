@@ -18,7 +18,7 @@ public class Game {
     public void DrawGame(){
          for (int i = 0; i < gameGrid.length; i++) {
             for (int j = 0; j < gameGrid[i].length; j++) {
-                System.out.print(gameGrid[i][j] + ",");
+                System.out.print(gameGrid[i][j] + "");
             }
             System.out.println();
         }
