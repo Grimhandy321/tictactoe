@@ -10,9 +10,13 @@ public class Game {
         this.tokenB = tokenB;
     }
 
-    public String DrawGame(){
-        String ret = new String();
-        return ret;
+    public void DrawGame(){
+         for (int i = 0; i < gameGrid.length; i++) {
+            for (int j = 0; j < gameGrid[i].length; j++) {
+                System.out.print(gameGrid[i][j] + ",");
+            }
+            System.out.println();
+        }
     }
     public String getToken(int x,int y){
         return gameGrid[x][y];
